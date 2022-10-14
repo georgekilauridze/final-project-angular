@@ -1,0 +1,91 @@
+
+<header>
+    <div class="header-wrapper">
+        <h1>TRAVEL CLUB</h1>
+    </div>
+</header>
+
+    <h2>Feel the form below to make an appointment</h2>
+
+    <div class="bg-image">
+  
+            <img src="https://mexicanroutes.com/wp-content/uploads/2019/03/MexicanRoutes-MexicoTrip.jpg" alt="Slider Title 4" class="image-slider">
+           
+     </div>   
+            
+<form [ FormGroup ]="userForm" (ngSubmit)="onSubmit()">
+
+    <div class="form-group">
+        <label>First Name</label>
+        <input type="text" formControlName="firstName">
+        <!-- <span *ngIf="useForm.get('firstName')?.errors?.['forbiddenName']">this name is forbidden</span> -->
+    </div>
+    <div class="form-group">
+        <label>Last Name</label>
+        <input type="text" formControlName="lastName">
+    </div>
+    <div class="form-group">
+        <label>Nationality</label>
+        <input type="text" formControlName="nationality">
+    </div>
+    <div class="form-group">
+        <label>Citizen</label>
+        <input type="text" formControlName="citizen">
+    </div>
+    <div class="form-group">
+        <label>Passport Number</label>
+        <input type="text-number" formControlName="lastName">
+    </div>
+    <div class="form-group">
+        <label>Age</label>
+        <input type="number" formControlName="age">
+    </div>
+    <div class="form-group">
+        <label>City</label>
+        <input type="text" formControlName="city">
+    </div>
+    <div class="form-group">
+        <label>address</label>
+        <input type="text" formGroupName="address">
+    </div>
+    <div class="form-group">
+        <label>Country</label>
+        <input type="text" formControlName="country">
+    </div>
+    <div class="form-group">
+        <label>Zip</label>
+        <input type="text" formControlName="zip">
+    </div>
+
+
+
+<!-- <div formArrayName="aliases">
+    <h2>Aliases</h2>
+    <button class="form-group" (click)="addAlias()" type="button">+ Add another alias</button>
+    <div class="form-group" *ngFor="let alias of aliases.controls; let i = index">
+        <label for="alias-{{i}}">Alias:</label>
+        <input id="alias-{{i}}" type="text" [ formControlName ]="i">
+        <br>
+        <button (click)="removeAlias(i)">DELETE</button>
+</div>
+</div> -->
+<button type="submit"[ active ]="userForm.invalid">SUBMIT</button>
+</form>
+<!-- <script src="script.js"></script> -->
+
+
+
+<footer>
+    <div class="main-footer">
+        <div class="footer-container">
+            <img class="logo"src="images/facebook.svg" alt="facebook">
+            <img class="logo"src="images/twitter.svg" alt="twitter">
+            <img class="logo"src="images/google-plus.svg" alt="google-plus">
+        </div>
+        <div class="footer-container1">
+            <p class="p-footer4">Copyright ©2022 All rights reserved | This template is made with love</p>
+            <p class="p-footer5">www.travelclub.com</p>
+       </div> 
+      </div>
+    
+    </footer>   

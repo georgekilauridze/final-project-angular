@@ -1,0 +1,69 @@
+.form-group {
+    margin-bottom: 20px;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid #3e3e3e;
+    border-radius: 3px;
+
+    &.ng-invalid {
+        border: 1px solid red;
+    }
+    &.ng-valid {
+        border-left: 5px solid green;
+    }
+
+}
+
+.header-wrapper {
+    background-color: burlywood;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* footer */
+
+.main-footer {
+    max-width: 1366px;
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    display: flex;
+}
+.footer-container {
+    width: 300px;
+    height: 20px;
+    color: white;
+    display: flex;
+    margin-top: 3%;
+    
+}
+.footer-container:hover {
+    color: blue;
+}
+.logo {
+    margin-left: 20px;
+}
+
+.footer-container1 {
+    width: 300px;
+    height: 20px;
+    color: white;
+    display: flex;
+    margin-top: 2%;
+    
+}
+.footer-container1:hover {
+    color: blue;
+}
+.logo {
+    margin-left: 20px;
+}
+
+
+

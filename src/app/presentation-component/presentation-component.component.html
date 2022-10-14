@@ -1,0 +1,37 @@
+
+<header>
+    <div class="header-wrapper">
+        <h1>TRAVEL CLUB</h1>
+    </div>
+</header>
+
+ <h2>Last date of application</h2>
+
+<div>
+<input type="text" [(ngModel)]="userForm" required minlength="6" #name="ngModel"/>
+
+<p> status: {{name.status}} </p>
+<p> dirty: {{name.dirty}} </p>
+<p> touched: {{name.touched}} </p>
+
+<div class="alert" *ngIf="name.invalid && (name.dirty || name.touched)">
+    <div *ngIf="name.errors?.['required']">name is required</div>
+    <div *ngIf="name.errors?.['minlength']">your name should be more than 6 characters</div>
+</div>
+</div>
+
+
+<footer>
+    <div class="main-footer1">
+        <div class="footer-container">
+            <img class="logo"src="images/facebook.svg" alt="facebook">
+            <img class="logo"src="images/twitter.svg" alt="twitter">
+            <img class="logo"src="images/google-plus.svg" alt="google-plus">
+        </div>
+        <div class="footer-container1">
+            <p class="p-footer4">Copyright ©2022 All rights reserved | This template is made with love</p>
+            <p class="p-footer5">www.travelclub.com</p>
+       </div> 
+      </div>
+    
+    </footer>   

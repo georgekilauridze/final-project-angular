@@ -1,0 +1,11 @@
+.mother{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 10px;
+}
+.main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
